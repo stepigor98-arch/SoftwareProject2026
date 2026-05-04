@@ -24,8 +24,8 @@ class App(tk.Tk):
 
 
 # Set window properties
-        self.title("Millionaire Quiz")
-        self.geometry("720x420")
+        self.title("Millionaire Quiz_V1.1")
+        self.geometry("1080x1200")
         self.resizable(True, True)
 
 # Game state
