@@ -2,50 +2,81 @@
 
 ## Project Overview
 
-This project is a Software Engineering course project. The goal is to create a software product with a clear structure, documentation, and future development plan.
+- This repository contains a Software Engineering course project called **Millionaire Quiz**.
+- The project is a desktop quiz game inspired by “Who Wants to Be a Millionaire”.
+- The application is developed in **Python**.
+- The user interface is built with **Tkinter**.
+- **SQLite** is used for storing questions, game data, and future game history.
+- The main goal is to improve and finalize the existing quiz game by adding settings, lifelines, game history, leaderboard, better UI, and CSV import/export.
 
-The project should be developed as a hybrid workflow between a human developer and AI assistants. The AI should help with simple coding tasks, documentation, testing, and refactoring, but the final decisions must stay with the human developer.
+## Important Context for AI Agents
+
+- Always read the `/docs` folder before making changes.
+- Use `/docs/pm_approach.md` to understand how the project is managed.
+- Use `/docs/plans/roadmap.md` to understand the MVP plan and future development stages.
+- README.md is written for humans.
+- AGENTS.md is written for AI assistants.
+- Do not invent new requirements if they are not written in README.md or `/docs`.
 
 ## Main Rules for AI Agents
 
-- Always read the `/docs` folder before making changes.
-- Keep the project structure simple and understandable.
+- Keep the project simple and understandable.
+- Follow the existing project structure.
 - Do not create unnecessary files or folders.
-- Do not change the main architecture without human approval.
-- Write clean and readable code.
-- Use simple naming for files, variables, and functions.
-- Prefer small and safe changes instead of large rewrites.
-- If something is unclear, check the documentation first.
+- Do not rewrite the whole project without human approval.
+- Do not remove existing features unless it is clearly required.
+- Prefer small and safe changes instead of large changes.
+- Before changing code, check how the current files are organized.
+- If something is unclear, check `/docs` first.
 
 ## Coding Rules
 
-- Use the programming language and tools already used in the project.
-- Follow the existing style of the codebase.
+- Use Python as the main programming language.
+- Use Tkinter for the desktop user interface.
+- Use SQLite for local data storage.
+- Keep code readable and suitable for a student course project.
+- Use clear names for files, classes, functions, and variables.
 - Keep comments short and useful.
-- Do not remove existing functionality unless it is clearly required.
-- Test important changes before suggesting them.
+- Avoid overcomplicated solutions.
+- Test important changes before suggesting that the task is finished.
 
-## Documentation Rules
+## Project Features
 
-- README.md is for humans.
-- AGENTS.md is for AI assistants.
-- Detailed project context must be stored inside `/docs`.
-- Project plans should be stored inside `/docs/plans`.
+The AI assistant may help implement or improve:
 
-## AI Responsibilities
+- game settings: number of questions and difficulty mode;
+- lifelines: 50/50 and Second Chance;
+- game history saved in SQLite;
+- leaderboard with best results;
+- improved interface design;
+- CSV import and export for questions;
+- basic tests and bug fixes;
+- documentation updates.
+
+## Human and AI Responsibilities
+
+The human developer is responsible for:
+
+- final architecture decisions;
+- checking course requirements;
+- reviewing generated code;
+- testing the final application;
+- deciding which features are accepted.
 
 AI assistants may help with:
 
 - boilerplate code;
-- simple functions;
+- small functions;
+- refactoring;
 - unit tests;
 - documentation drafts;
-- small refactoring;
-- checking code consistency.
+- finding possible bugs;
+- explaining code changes.
 
 AI assistants must not:
 
-- redesign the whole project without approval;
+- change the main architecture without approval;
 - delete important files;
-- invent requirements that are not documented;
-- ignore the roadmap and project documentation.
+- add features not connected to the roadmap;
+- ignore README.md and `/docs`;
+- make the project too complex for the course level.
