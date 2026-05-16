@@ -101,3 +101,35 @@ Features that can be added after the MVP:
 - export game history;
 - online question updates;
 - more advanced admin tools.
+
+
+
+
+## Task 4: Design Pattern Implementation
+
+**Status:** Complete
+
+### Completed Work
+
+The 50/50 lifeline feature was implemented as a separate module using the Strategy Pattern.
+
+A dedicated `lifelines` module was created inside the Product Repository.
+
+The module contains:
+
+- `LifelineStrategy` base class
+- `FiftyFiftyStrategy` implementation
+- `LifelineContext` class
+- module documentation in `README.md`
+
+### Scope Adjustments
+
+The original 50/50 lifeline logic was planned as a simple pure function.
+
+During implementation, the logic was moved into a Strategy Pattern structure.
+
+This adjustment makes the feature easier to extend in the future. For example, new lifelines such as Second Chance or Ask the Audience can be added as separate strategies.
+
+### Result
+
+This stage is complete. The selected feature now has modular business logic, module documentation, and an updated Mermaid architecture diagram.
