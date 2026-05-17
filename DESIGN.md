@@ -4,19 +4,40 @@
 
 Millionaire Quiz
 
-## Purpose
+## Framework
 
-This document defines the visual design contract for the Millionaire Quiz user interface.
+For the UI I use Streamlit because my project is written in Python and it is easy to connect with existing backend logic.
 
-The goal is to use Spec-Driven Development to guide AI-generated frontend code and avoid generic, inconsistent, or inaccessible UI.
+## Colors
 
-## Framework Choice
+| Element | Color |
+|---|---|
+| Background | `#0F172A` |
+| Card | `#111827` |
+| Primary button | `#F5C542` |
+| Secondary color | `#1E3A8A` |
+| Text | `#F8FAFC` |
+| Muted text | `#CBD5E1` |
+| Success | `#22C55E` |
+| Warning | `#F97316` |
 
-The selected UI framework is Streamlit.
+## Typography
 
-Streamlit was selected because the project is written in Python and the backend business logic is already implemented as a Python module.
+- Use simple readable text
+- Main title should be big and bold
+- Question text should be clear
+- Do not use decorative fonts
 
-The UI should connect directly to the existing lifelines module:
+## Spacing
 
-```text
-MillionaireQuiz_Folder/lifelines/strategies.py
+- Use enough space between question, answers and buttons
+- Answer options should be shown as separate blocks
+- The page should not look overloaded
+
+## Component Rules
+
+- Buttons should have clear names
+- Main button is used for the 50/50 lifeline
+- Answer options should be displayed as cards
+- Result message should be visible after clicking the button
+- The UI should not duplicate backend logic
